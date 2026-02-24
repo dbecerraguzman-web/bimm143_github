@@ -1,0 +1,18 @@
+---
+title: "Class 8: Breast Cancer Mini-Project"
+author: "Dariana Becerra Guzman (A17506182)"
+format: html
+---
+
+## Background
+
+In today's class we will apply the methods and techniques clustering and PCA to help make sense of a real world breast cancer FNA biopsy data set. 
+
+## Data Import
+
+We start by importing our data. It is a CSV file sp we will use the `read.csv()` function. 
+
+```{r}
+read.csv("WisconsinCancer.csv")
+```
+
