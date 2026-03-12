@@ -57,16 +57,16 @@ k
 
     Cluster means:
               x         y
-    1  2.873772 -2.937024
-    2 -2.937024  2.873772
+    1 -2.986562  3.182925
+    2  3.182925 -2.986562
 
     Clustering vector:
-     [1] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2
-    [39] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+     [1] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1
+    [39] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 
     Within cluster sum of squares by cluster:
-    [1] 60.75718 60.75718
-     (between_SS / total_SS =  89.3 %)
+    [1] 59.09789 59.09789
+     (between_SS / total_SS =  90.6 %)
 
     Available components:
 
@@ -81,8 +81,8 @@ k$centers
 ```
 
               x         y
-    1  2.873772 -2.937024
-    2 -2.937024  2.873772
+    1 -2.986562  3.182925
+    2  3.182925 -2.986562
 
 > Q. What component of your kmeans result has the cluster size?
 
@@ -100,8 +100,8 @@ k$size
 k$cluster
 ```
 
-     [1] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2
-    [39] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+     [1] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1
+    [39] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 
 > Q. Plot the results of clustering (i.e. our dara colored by the
 > clustering result) along with the cluster centers?
@@ -132,7 +132,7 @@ points(k4$centers, col="blue", pch=15, cex=2)
 k$tot.withinss
 ```
 
-    [1] 121.5144
+    [1] 118.1958
 
 ## Hierarchical Clustering
 

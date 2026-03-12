@@ -88,7 +88,7 @@ The `sample()` function can be a useful starting point here:
 sample(1:10, size=4)
 ```
 
-    [1] 4 5 8 7
+    [1] 8 6 9 2
 
 > Q. Generate 9 random numbers taking from the input vector x=1:10?
 
@@ -96,7 +96,7 @@ sample(1:10, size=4)
 sample(1:10, size=9)
 ```
 
-    [1]  5  2  3  7 10  1  8  9  6
+    [1]  1  5  9  8  7  6  4 10  3
 
 > Q. Generate 12 random numbers taking from the input vector x=1:10?
 
@@ -104,7 +104,7 @@ sample(1:10, size=9)
 sample(1:10, size=12, replace=TRUE)
 ```
 
-     [1]  4  4  4  6  1  7  8  8 10  4  2  5
+     [1] 5 2 6 7 3 6 6 3 4 1 2 9
 
 > Q. Write code for the `sample()` function that generated nucleotide
 > sequences of length 6?
@@ -113,7 +113,7 @@ sample(1:10, size=12, replace=TRUE)
 sample(x=c("A", "G","T", "C"), size=6, replace=TRUE)
 ```
 
-    [1] "A" "A" "C" "G" "T" "G"
+    [1] "A" "G" "C" "A" "T" "A"
 
 > Q. Write a first function `generate_dna()` that returns a **user
 > specified length** DNA sequence.
@@ -128,7 +128,7 @@ generate_dna <- function(len) {
 generate_dna(len=10)
 ```
 
-     [1] "A" "C" "T" "A" "G" "C" "A" "G" "A" "T"
+     [1] "T" "A" "G" "C" "A" "C" "G" "G" "T" "G"
 
 > **Key Points** Every function in R looks fundamentally the same in
 > terms of its structure. Basically 3 things: name, input, and body.
@@ -165,7 +165,7 @@ generate_dna()
 
     Single-element vector output
 
-    [1] "GACGCG"
+    [1] "TGCAAA"
 
 ``` r
 generate_dna(fasta=TRUE)
@@ -173,7 +173,7 @@ generate_dna(fasta=TRUE)
 
     Single-element vector output
 
-    [1] "ACTAGA"
+    [1] "TAAGCC"
 
 The `paste()` function - it’s job is to join up or stick together
 (a.k.a. paste) input strings together.
@@ -232,7 +232,7 @@ my_seq <- generate_protein(42)
 my_seq
 ```
 
-    [1] "PMKKKKMPTYSPGNNTYELERIANGHKNRMRKGTRWAADGGC"
+    [1] "HVMSFMDPPSASLDRRPTRKWPIDAPCDYMTWVWADIEDAWY"
 
 > Q. Use that function to generate randomm protein sequences between
 > length 6 and 12.
@@ -247,19 +247,19 @@ for(i in 6:12) {
 ```
 
     >6
-    VGRQSH 
+    KGVPRE 
     >7
-    KAKWTDW 
+    YDPQLYD 
     >8
-    NTFYRHYS 
+    YCVYVAQF 
     >9
-    SDSGTVHYH 
+    GNQQTGDRG 
     >10
-    LHYCEQYEYI 
+    PPLGSHRVCH 
     >11
-    KICMHIDIGWR 
+    FKCYRCWAGII 
     >12
-    VNWECDMQIPFH 
+    EAVSIVDCEWCS 
 
 > Q. Are any of your sequences unique i.e. not found anywhere in nature?
 
